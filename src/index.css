@@ -1,0 +1,23 @@
+.button {
+  font-size: 36px;
+}
+
+.neon-font {
+  font-family: "Corinthia", serif;
+  font-weight: 600;
+  color: #f088f2;
+  text-shadow: 0 0 5px #ef1df2, /* Brilho próximo */ 0 0 10px #ef1df2,
+    /* Brilho médio */ 0 0 20px #ef1df2, /* Brilho intenso */ 0 0 40px #ef1df2;
+  transition: text-shadow 0.4s ease-in-out;
+}
+
+.neon-font:hover {
+  text-shadow: 0 0 5px #d64dd8, /* Brilho próximo */ 0 0 10px #d64dd8,
+    /* Brilho médio */ 0 0 20px #d64dd8, /* Brilho intenso */ 0 0 40px #d64dd8;
+}
+
+@media (min-width: 1248px) {
+  .button {
+    font-size: 42px;
+  }
+}
