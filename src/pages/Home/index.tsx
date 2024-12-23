@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./styles.css";
 
 const Home = () => {
@@ -5,16 +6,18 @@ const Home = () => {
     <section className="home-container">
       <h2 className="neon-title">Six Dice</h2>
       <div className="home-buttons">
-        <button type="button" className="button neon-font home-button">
-          New Game
-        </button>
+        <Link to={"/jogo"}>
+          <button type="button" className="button neon-font home-button">
+            New Game
+          </button>
+        </Link>
         <button type="button" className="button neon-font home-button">
           Leaderboard
         </button>
         <button type="button" className="button neon-font home-button">
           Configurations
         </button>
-      </div> 
+      </div>
     </section>
   );
 };
